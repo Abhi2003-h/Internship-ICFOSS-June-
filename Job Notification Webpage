@@ -1,0 +1,79 @@
+//HTML CODE
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Notifications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color:white;
+        }
+        .header {
+            background-color: #5e89b8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            margin: 20px;
+        }
+        .job-notification {
+            color:#ffffff;
+            background-color: white;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .job-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color:black;
+        }
+        .job-details {
+            font-size: 1em;
+            color: #6c757d;
+        }
+        .apply-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #5e89b8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition:  0.3s ease;
+        }
+        .apply-btn:hover {
+            color: #ffffff;
+             padding: 15px 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 style="color:#ffffff">Job Notifications</h1>
+    </div>
+    <div class="container">
+        <div class="job-notification">
+            <div class="job-title">Job Description</div>
+            <div class="job-details">
+                <p><strong>Location:</strong> ICFOSS, TVM</p>
+                <p><strong>Type:</strong> Interns/Apprentice</p>
+                <p><strong>Duration:</strong> 6 Months</p>
+                <p><strong>Stipend:</strong> Rs.9,000 - Rs.15,000 </p>
+                <p>ICFOSS is inviting application from fresh graduates/Diploma in Engineering holders, who are interested in FOSSH technologies for engaging them as Interns/Apprentice in the various projects of ICFOSS. This will benefit both the candidates in kick starting their career and also help ICFOSS in successful completion of its ongoing projects. The internship will enable hands-on experience to the potential FOSSH developers.</p>
+            </div>
+            <a href="http://192.168.32.113/jobs" class="apply-btn">Apply Now</a>
+        </div>
+        <!-- Add more job-notification divs as needed -->
+    </div>
+</body>
+</html>
