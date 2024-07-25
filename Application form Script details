@@ -1,0 +1,22 @@
+frappe.web_form.validate = () => {
+
+    // Validate date of birth
+    const dob = frappe.web_form.doc.dob;
+    const year2000 = new Date('2000-01-01');
+
+    if (new Date(dob) >= year2000) {
+        frappe.msgprint(("Date of Birth should be before 01-01-2000."));
+        return false; // Prevent the form from being submitted
+    }
+    // Validate the mobile number
+    if (frappe.web_form.doc.phone_number && !/^\d{10}$/.test(frappe.web_form.doc.phone_number)) {
+        frappe.msgprint({
+            message: __('Mobile number should contain exactly 10 digits and only numbers'),
+            raise_exception: true
+        });
+        return false;
+    }
+
+    return true; // Allow the form to be submitted if all validations pass
+};
+
