@@ -1,0 +1,19 @@
+[data-doctype="Web Form"] .page-content-wrapper .container .page_content .web-form-header {
+    border: none; 
+    border-bottom: none;
+    border-top-left-radius: 0px; 
+     border-top-right-radius: 0px;
+        
+}
+
+[data-doctype="Web Form"] .page-content-wrapper .container .page_content .web-form {
+    border:none;
+}
+
+.form-page
+{
+
+    color: black;
+    box-shadow: 0 2px 50px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
